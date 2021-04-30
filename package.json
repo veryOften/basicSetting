@@ -1,11 +1,14 @@
 {
-  "name": "basicsetting",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "basicsetting",
+    "version": "1.0.0",
+    "description": "",
+    "main": "inc/todo.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "uuid": "^8.3.2"
+    }
 }

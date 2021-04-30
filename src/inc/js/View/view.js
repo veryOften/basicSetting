@@ -1,9 +1,4 @@
 export default class ViewBuilder {
-    withHtml(htmlString) {
-        this.htmlString = htmlString;
-        return this;
-    }
-
     builder() {
         return new View(this);
     }
@@ -18,14 +13,20 @@ const Location = Object.freeze({
 
 class View {
     constructor(prams) {
-        this.htmlString = prams.htmlString;
+        this.htmlString = '';
+    }
+
+    setHtmlString(htmlString) {
+        const template = document.createElement('template');
+        template.innerHTML = htmlString;
+        this.htmlString = template.content.firstChild;
     }
 
     updateHtmlStirng(options) {
-        const { standard, location } = options;
+        const { parents, location } = options;
         switch (location) {
             case Location.APPEND:
-                standard.innerHTML = this.htmlString;
+                parents.appendChild(this.htmlString);
                 break;
 
             default:
