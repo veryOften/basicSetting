@@ -17,17 +17,14 @@ export default class ButtonBuilder {
 class Button {
     constructor(prams) {
         this.selector = prams.selector;
-        this.selector.addEventListener(
-            prams.action,
-            this.onClickEvent.bind(this)
-        );
+        this.selector.addEventListener(prams.action, this._onEvent.bind(this));
     }
 
     setEventOnclick(eventFn) {
         this.clickEventFn = eventFn;
     }
 
-    onClickEvent(event) {
+    _onEvent(event) {
         this.clickEventFn && this.clickEventFn(event);
     }
 }
