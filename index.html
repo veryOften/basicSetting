@@ -9,28 +9,48 @@
     <title>Todo</title>
 </head>
 <body>
-    <div class="todo__wrapper">
-        <ul class="todo__box">
-            <li>
-                <input type="checkbox"/>
-                <span>test</span>
-                <button class="todo-delete">Delete</button>
-                <button class="todo-update">Update</button>
-            </li>
-            <li>
-                <input type="checkbox"/>
-                <span>test</span>
-                <button class="todo-delete">Delete</button>
-                <button class="todo-update">Update</button>
-            </li>
-            <li>
-                <input type="checkbox"/>
-                <span>test</span>
-                <button class="todo-delete">Delete</button>
-                <button class="todo-update">Update</button>
-            </li>
-        </ul>
-    </div>
-    <button type="button" class="todo-add">Add</button>
+    <header>
+        <h1>TODO 👍</h1>
+    </header>
+    <main>
+        <div class="todo__wrapper">
+            <ul class="todo__box">
+                <li>
+                    <div>
+                        <input type="checkbox"/>
+                        <span>test</span>
+                    </div>
+                    <div class="todo__buttonWrapper">
+                        <button class="todo-delete">Delete</button>
+                        <button class="todo-update">Update</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox"/>
+                        <span>test</span>
+                    </div>
+                    <div class="todo__buttonWrapper"> 
+                        <button class="todo-delete">Delete</button>
+                        <button class="todo-update">Update</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox"/>
+                        <span>test</span>
+                    </div>
+                    <div class="todo__buttonWrapper">
+                        <button class="todo-delete">Delete</button>
+                        <button class="todo-update">Update</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="todo__wrapper-add">
+            <input type="text" max="200" class="todo-text"/>
+            <button type="button" class="todo-add">Add</button>
+        </div>
+    </main>
 </body>
 </html>
