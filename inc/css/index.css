@@ -1,0 +1,33 @@
+body{
+    width: 70%;
+}
+
+.todo__wrapper{
+    text-align: center;
+}
+
+/* .todo__box{
+
+} */
+
+.todo__box li {
+    display: flex;
+}
+
+.todo__box li input
+.todo__box li button
+{
+    flex:0.1;
+}
+
+.todo__box li span{
+    flex:0.7;
+}
+
+.todo-add{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
