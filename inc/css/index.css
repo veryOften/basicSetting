@@ -1,33 +1,118 @@
-body{
-    width: 70%;
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.todo__wrapper{
+body{
+    width: 100%;
+    background-color: black;
+}
+
+header h1{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
 }
 
-/* .todo__box{
+.todo__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: burlywood;
+}
 
-} */
+.todo__box{
+    padding: 15px;
+    margin: 0;
+
+}
 
 .todo__box li {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .todo__box li input
-.todo__box li button
+.todo__buttonWrapper
 {
     flex:0.1;
 }
 
+.todo__buttonWrapper{
+    display: flex;
+}
+
+.todo__box li button
+{
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 15px;
+    border: none;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.todo__box li button:hover{
+    color: red;
+    transition: all 300ms ease-in ;
+}
+
 .todo__box li span{
     flex:0.7;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.todo__wrapper-add{
+    display: flex;
+    justify-content: flex-end;
+    width: 800px;
+    margin: auto;
+    border: 1px solid burlywood;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.todo__wrapper-add input{
+    flex: 1px;
+    border-radius: 15px;
+    margin-right: 10px;
+    border: 1px solid burlywood;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .todo-add{
-    background-color: white;
+    background-color: burlywood;
     color: black;
     font-weight: bold;
     font-size: 15px;
+    border:none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.todo-add:hover{
+    background-color: burlywood;
+    color: white;
+    transition: all 300ms ease-in ;
 }
 
